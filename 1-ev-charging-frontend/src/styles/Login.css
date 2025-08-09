@@ -1,0 +1,55 @@
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.login-background {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../assets/images/Login-page.jpeg");
+}
+
+.signup-background {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../assets/images/Sinup-page.jpeg");
+}
+
+/* Smooth Background Transition */
+.login-container.login-background,
+.login-container.signup-background {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-card {
+  width: 350px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-link {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}

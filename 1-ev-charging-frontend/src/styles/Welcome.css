@@ -1,0 +1,73 @@
+/* ---- Background Image Styling ---- */
+.welcome-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/images/welcome-page.jpeg"); /* Aapke image ka path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* ---- Dark Overlay Effect ---- */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+/* ---- Content Centering ---- */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---- Glassmorphism Card Effect ---- */
+.welcome-card {
+  background: rgba(0, 0, 0, 0.75); /* Dark transparent effect */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 400px;
+  animation: scale-up 1s ease-in-out;
+}
+
+/* ---- Glowing Text Effect ---- */
+.glowing-text {
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+               0 0 20px rgba(0, 123, 255, 0.8);
+}
+
+/* ---- Fade-in Animation ---- */
+.fade-in {
+  opacity: 1;
+  animation: fadeInAnimation 1.5s ease-in-out;
+}
+
+/* ---- Scale Animation ---- */
+@keyframes scale-up {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ---- Fade-in Keyframes ---- */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

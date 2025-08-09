@@ -1,0 +1,110 @@
+/* ✅ Background image with dark overlay */
+.dashboard-container {
+  background: url("../assets/images/Dashboard.jpeg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* ✅ Dark overlay for text visibility */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ✅ Animated heading */
+.title-glow {
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+  color: #ffffff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: #f0f0f0;
+}
+
+/* ✅ Glassmorphism Card Effect */
+.card-glass {
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* ✅ Hover Animation - Sliding Effect */
+.card-glass:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ Icon Styling with Glow */
+.icon-container {
+  margin-bottom: 15px;
+  font-size: 3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-glass:hover .icon-container {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
+}
+
+/* ✅ Text Styling */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+}
+
+/* ✅ Icon Custom Colors */
+.text-primary {
+  color: #4facfe !important;
+}
+
+.text-warning {
+  color: #ffcc00 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #ff4757 !important;
+}
+
+/* ✅ Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

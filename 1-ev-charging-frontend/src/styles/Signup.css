@@ -1,0 +1,7 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/path-to-your-image/Sinup-page.jpeg') no-repeat center center/cover;
+}
