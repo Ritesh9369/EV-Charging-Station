@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚡ EV Charging Station Website
 
 A modern, responsive **EV Charging Station web application** built with **React.js (Vite)**, **Bootstrap**, and **Node.js + Express + MySQL**.  
@@ -80,3 +81,7 @@ CREATE TABLE users (
 );
 
 📸 Screenshots
+=======
+# EV-Charging-Station
+EV Charging Station web application built with React, Bootstrap, Node.js, Express, and MySQL, Leaflet.ja map.
+>>>>>>> f0dc1d5519eca9d4f4a5b0e51496282be0817b86
