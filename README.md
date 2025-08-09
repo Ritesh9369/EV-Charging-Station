@@ -118,7 +118,24 @@ nodemon index.js
 
 ---
 
-
+# Short Screen 
+## Home Page
+![home](./screenshots/home1.png)
+## Login Page
+![home](./screenshots/login2.png)
+## Registraction Page
+![home](./screenshots/reg3.png)
+## Loding Page
+![home](./screenshots/loding4.png)
+## Dasboard Page
+![home](./screenshots/das4.png)
+## Booking Page
+![home](./screenshots/book5.png)
+![home](./screenshots/book6.png)
+## Profile Page
+![home](./screenshots/profile7.png)
+## History Page
+![home](./screenshots/history.png)
 
 
 
